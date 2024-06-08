@@ -13,9 +13,7 @@ public class Task1 {
         int h = Integer.parseInt(sc.nextLine()); // represents the number of hours
         int totalOrcs = n;
 
-        for (int hour = 1; hour < h; hour++) {
-            totalOrcs += n + hour * m;
-        }
+         int totalOrcs = h * n + m * h * (h - 1) / 2;
 
         System.out.println(totalOrcs);
 
